@@ -2,190 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kazuki Tojo — AeroAstro SM-PhD Candidate at MIT</title>
+  <title>Kazuki Tojo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kazuki Tojo – AeroAstro SM-PhD candidate at MIT Gas Turbine Lab, specializing in fluid mechanics, heat transfer, and propulsion research.">
-  
-  <!-- Favicon -->
+  <meta name="description" content="Kazuki Tojo — MIT AeroAstro S.M.–Ph.D. candidate researching propulsion, fluid mechanics, and heat transfer.">
+  <link rel="stylesheet" href="https://latex.now.sh/style.css">
   <link rel="icon" href="rocket_icon.png">
-
-  <!-- Google Fonts (optional, for a clean, modern look) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <style>
-    /* Reset & base styles */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+    /* Keep LaTeX font style but improve layout and spacing */
     body {
+      font-family: "Times New Roman", Times, serif;
+      color: #222;
+      line-height: 1.5;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background-color: #ffffff;
-      padding: 0 1rem;
-    }
-    a {
-      color: #1a0dab;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Layout */
-    header {
-      text-align: center;
-      padding: 2rem 0 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p.subtitle {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #555;
-    }
-
-    nav {
-      text-align: center;
-      margin: 1.5rem 0;
-    }
-    nav a {
-      margin: 0 0.75rem;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .profile-photo {
-      margin: 1.5rem auto;
-      width: 250px;
-      border-radius: 8px;
+      padding: 0;
     }
 
     main {
       max-width: 800px;
       margin: 0 auto;
-      padding-bottom: 3rem;
+      padding: 2rem 1rem;
     }
 
-    .intro {
-      margin: 1.5rem 0;
-      font-size: 1.05rem;
+    .tabs {
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
-    .section {
-      margin: 2rem 0;
+    .tab-button {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      margin: 0 1rem;
+      padding: 0.5rem;
     }
-    .section h2 {
+
+    .tab-button:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
       margin-bottom: 1rem;
-      font-size: 1.5rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.25rem;
     }
 
-    .awards-list {
-      list-style-position: inside;
-      padding-left: 0;
-      margin: 0;
+    p.author {
+      text-align: center;
+      margin-bottom: 2rem;
     }
-    .awards-list li {
-      margin: 0.75rem 0;
+
+    figure.portrait {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    figure.portrait img {
+      width: 40%;
+      max-width: 250px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .abstract {
+      margin-bottom: 2rem;
+    }
+
+    section.awards {
+      margin-bottom: 2rem;
+    }
+
+    section.awards ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section.awards li {
+      margin-bottom: 1rem;
     }
 
     footer {
       text-align: center;
-      margin: 3rem 0 1rem;
-      font-size: 0.9rem;
-      color: #777;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #555;
     }
 
-    /* Responsive typography */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      header p.subtitle {
-        font-size: 1rem;
-      }
+    /* Optional: Sidenotes (keep LaTeX style) */
+    .sidenote-toggle {
+      display: none;
+    }
+
+    .sidenote {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Kazuki Tojo</h1>
-    <p class="subtitle">AeroAstro S.M.-Ph.D. Candidate, MIT Gas Turbine Lab</p>
-  </header>
-
-  <nav>
-    <a href="index.html">About</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
-  </nav>
-
   <main>
-    <img src="kazukitojo_website_portrait.jpg" alt="Portrait of Kazuki Tojo" class="profile-photo">
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <a href="index.html" class="tab-button">About</a>
+      <a href="cv.html" class="tab-button">CV</a>
+      <a href="projects.html" class="tab-button">Projects</a>
+    </div>
 
-    <section class="intro">
-      <p>
-        I am an S.M.-Ph.D. student at the <a href="https://www.gas-turbine-lab.mit.edu/">MIT Gas Turbine Lab</a>, specializing in fluid mechanics and heat transfer for aerospace propulsion and aerodynamics. My academic journey includes:
-      </p>
-      <p>
-        <strong>Princeton University (B.S.E., 2020–2024)</strong> — B.S.E. in Mechanical & Aerospace Engineering  
-        <br>
-        <strong>University of Oxford (M.Eng., 2022–2023)</strong> — Exchange / Thesis on heat transfer  
-        <br>
-        <strong>MIT (2024–present)</strong>
-      </p>
-    </section>
+    <h1>Kazuki Tojo</h1>
+    <p class="author">
+      <b><a href="https://www.linkedin.com/in/kazukitojo/">LinkedIn</a> | kazukitj@mit.edu</b><br>
+      Massachusetts Institute of Technology, 2024–present <br>
+      Princeton University, 2020–2024 <br>
+      University of Oxford, 2022–2023
+    </p>
 
-    <section class="section">
-      <h2>Research Interests</h2>
-      <p>
-        Fluid mechanics & heat transfer in rotating machinery, compressor stall & surge dynamics, propulsion aerothermodynamics, and thermal-fluid modeling. My current work focuses on unsteady compressor behavior under varying operating conditions.
-      </p>
-    </section>
+    <!-- Portrait -->
+    <figure class="portrait">
+      <img src="kazukitojo_website_portrait.jpg" alt="Portrait of Kazuki Tojo">
+    </figure>
 
-    <section class="section">
-      <h2>Awards & Honors</h2>
-      <ul class="awards-list">
-        <li><strong>Ezoe Memorial Graduate Scholarship</strong> — MIT (2024–present): Full-ride funding (~US $95,000/yr) awarded to ≈2 incoming grad students in Japan.</li>
-        <li><strong>Magna Cum Laude</strong> — Princeton University (2024): Graduated with High Honours in Mechanical & Aerospace Engineering.</li>
-        <li><strong>Sigma Xi Engineering Honor Society</strong> — Princeton University (2024): Recognized for outstanding undergraduate research.</li>
-        <li><strong>Tau Beta Pi Engineering Honor Society</strong> — Princeton University (2023): Top 20% of class plus character/leadership evaluation.</li>
-        <li><strong>M.Eng. Thesis First-Class Honours</strong> — University of Oxford (2023): Awarded for excellence in heat-transfer research.</li>
-        <li><strong>Ezoe Memorial Undergraduate Scholarship</strong> — Princeton University (2020–2024): Awarded annually (~¥10 million JPY) to top Japanese applicants.</li>
+    <!-- About / Abstract -->
+    <div class="abstract">
+      <p>
+        Kazuki Tojo is an AeroAstro S.M.–Ph.D. candidate in MIT's <a href="https://www.gas-turbine-lab.mit.edu/">Gas Turbine Lab</a>. His interests lie in the fluid mechanics and heat transfer of propulsion and aerodynamics. He has completed a B.S.E. thesis on electric propulsion at Princeton University and an M.Eng. thesis on heat transfer at University of Oxford. His current research at MIT focuses on rotating stall, under the guidance of <a href="https://aeroastro.mit.edu/people/edward-m-greitzer/">Professor Ed Greitzer</a>.
+      </p>
+    </div>
+
+    <p style="text-align: center;"><b>Project portfolio available <a href="projects.html">here</a>.</b></p>
+
+    <!-- Awards Section -->
+    <section class="awards">
+      <h3>Awards & Honors</h3>
+      <ul>
+        <li><b>MIT, 2024–Present:</b> Ezoe Memorial Graduate Scholar — One of ~2 Japanese graduate students to receive $95,000 USD annual funding.</li>
+        <li><b>Princeton University, 2024:</b> Magna Cum Laude — Graduated with High Honours in Mechanical and Aerospace Engineering.</li>
+        <li><b>Princeton University, 2024:</b> Sigma Xi Engineering Honour Society — Outstanding undergraduate thesis research.</li>
+        <li><b>Princeton University, 2023:</b> Tau Beta Pi Engineering Honour Society — Top 20% of senior engineering class with exemplary character.</li>
+        <li><b>University of Oxford, 2023:</b> M.Eng. Thesis First-Class Honours — Outstanding research demonstrated by 4th Year Report.</li>
+        <li><b>Princeton University, 2020–2024:</b> Ezoe Memorial Undergraduate Scholar — One of ~5 Japanese undergraduates to receive 10 million JPY annual funding.</li>
       </ul>
     </section>
 
-    <section class="section">
-      <h2>Contact</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/kazukitojo/">LinkedIn</a> | <a href="mailto:kazukitj@mit.edu">kazukitj@mit.edu</a>
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Portfolio</h2>
-      <p>
-        View my project portfolio <a href="projects.html">here</a>.
-      </p>
-    </section>
+    <footer>
+      <small>&copy; 2024 Kazuki Tojo</small>
+    </footer>
   </main>
-
-  <footer>
-    &copy; 2025 Kazuki Tojo
-  </footer>
 </body>
 </html>
