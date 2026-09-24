@@ -87,7 +87,7 @@ summary:focus-visible {
 
 .site-header h1 {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: clamp(2.35rem, 6vw, 3.45rem);
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -200,8 +200,7 @@ section + section {
   line-height: 1.55;
 }
 
-.publication-list,
-.award-list {
+.publication-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -233,25 +232,6 @@ section + section {
   color: var(--muted);
   font-family: var(--sans);
   font-size: 0.77rem;
-}
-
-.award-list {
-  font-size: 0.98rem;
-  line-height: 1.48;
-}
-
-.award-list li + li {
-  margin-top: 8px;
-}
-
-.award-list .award-name {
-  font-weight: 600;
-}
-
-.award-list .award-meta {
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 0.78rem;
 }
 
 .entry-meta summary {
@@ -355,15 +335,6 @@ section + section {
     gap: 8px 15px;
     margin-bottom: 30px;
     font-size: 0.72rem;
-  }
-
-  .award-list li + li {
-    margin-top: 11px;
-  }
-
-  .award-list .award-meta {
-    display: block;
-    margin-top: 1px;
   }
 
   details.entry-meta {
