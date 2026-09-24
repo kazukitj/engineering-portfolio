@@ -1,62 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Kazuki Tojo: Publications</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://latex.now.sh/style.css">
-    <link rel="icon" href="/rocket_icon.png">
-    <style>
-      iframe {
-        width: 100%;
-        height: 400px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #efefef;
-      }
-  
-      span {
-        font-weight: 600;
-        margin-bottom: 50px;
-        display: block;
-      }
-    </style>
-  </head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEMS Gas Sensing Thesis | Kazuki Tojo</title>
+  <meta name="description" content="Kazuki Tojo's Oxford M.Eng. thesis on high-frequency gas sensing for cooling and combustion using MEMS heat-transfer measurements.">
+  <link rel="canonical" href="https://kazukitojo.com/meng_thesis/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MEMS Gas Sensing Thesis | Kazuki Tojo">
+  <meta property="og:description" content="A proof-of-concept study of high-frequency gas sensing using a MEMS gas-flow sensor.">
+  <meta property="og:url" content="https://kazukitojo.com/meng_thesis/">
+  <meta name="theme-color" content="#fffefa">
+  <link rel="icon" href="/rocket_icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
 <body>
-  <main>
+  <main class="site-shell">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/">About</a>
+      <a href="/cv/">CV</a>
+      <a href="/projects/">Projects</a>
+      <a href="/publications/" aria-current="page">Publications</a>
+    </nav>
 
-    <div class="tabs" style="text-align: center;">
-        <a href="https://kazukitojo.com/">About</a>
-        <a href="/cv/" class="tab-button">CV</a>
-        <a href="/projects/" class="tab-button">Projects</a>
-        <a href="/publications/" class="tab-button">Publications</a>
-    </div>
+    <header class="site-header">
+      <h1>Kazuki Tojo</h1>
+      <p class="page-kicker">M.Eng. Thesis</p>
+    </header>
 
-    <h1 style="text-align: center;">Kazuki Tojo</h1>
+    <article class="prose">
+      <h2>Gas Sensing for Cooling and Combustion using Micro-Electro-Mechanical Systems</h2>
+      <details class="entry-meta">
+        <summary>Thesis details</summary>
+        <p>University of Oxford, October 2022–June 2023. Supervised by Professor Kam Chana and Professor John Coull. First-class honours.</p>
+      </details>
+      <p>
+        Developed a high-frequency, high-sensitivity gas-analysis method by pulsing the tungsten filament of a MEMS gas-flow sensor.
+        A finite-element model was derived and validated with high-pressure argon, compressed dry air, and exhaled breath, improving
+        measurement frequency by three orders of magnitude over contemporary commercial sensors.
+      </p>
+      <details class="document-reader">
+        <summary>Read the M.Eng. thesis</summary>
+        <iframe class="document-frame" data-src="4yp_report_final_kazuki_tojo.pdf#view=FitH" title="M.Eng. thesis on MEMS gas sensing for cooling and combustion"></iframe>
+        <noscript><p class="reader-status">JavaScript is required to open the inline document reader.</p></noscript>
+      </details>
+    </article>
 
-    <p class="author"><b>Publications</b></p>
-
-    <h4>M.Eng. Thesis: Gas Sensing for Cooling and Combustion using Micro-Electro-Mechanical Systems</h4>
-    <label for="sn-anything" class="sidenote-toggle">⊕</label>
-    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-    <span class="sidenote">University of Oxford, Oct 2022 to Jun 2023. Supervised by Professor Kam Chana and Professor John Coull. 
-        First-class honours.</span>
-    <p>
-        Developed a novel method of high frequency and high sensitivity gas analysis by pulsing, through a soldered 9-pin d-sub 
-        connection, the tungsten filament of a MEMS gas flow sensor as a thin-film and obtaining heat curves. Derived and validated 
-        a finite-elements model using high pressure argon gas, compressed dry air and exhaled breath. Improved the measurement frequency 
-        by 3 orders of magnitude compared to gas sensors on the current market
-    </p>
-    <br>
-    <style>#pdf1{width:100%; height:600px;}</style>
-    <iframe id="pdf1" src="4yp_report_final_kazuki_tojo.pdf" frameborder="0" ></iframe>
-
-    <br><br>
-    <footer><small>&copy 2026 Kazuki Tojo</small></footer>
+    <footer class="site-footer">&copy; 2026 Kazuki Tojo</footer>
   </main>
 </body>
-
 </html>

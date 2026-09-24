@@ -1,62 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Kazuki Tojo: Projects</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://latex.now.sh/style.css">
-    <link rel="icon" href="/rocket_icon.png">
-    <style>
-      iframe {
-        width: 100%;
-        height: 400px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #efefef;
-      }
-  
-      span {
-        font-weight: 600;
-        margin-bottom: 50px;
-        display: block;
-      }
-    </style>
-  </head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cislunar Space Mission Design | Kazuki Tojo</title>
+  <meta name="description" content="ARGOS, a four-satellite cislunar communication, data-relay, and object-tracking mission designed by a 24-person Princeton team led by Kazuki Tojo.">
+  <link rel="canonical" href="https://kazukitojo.com/cislunar_mission/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cislunar Space Mission Design | Kazuki Tojo">
+  <meta property="og:description" content="A four-satellite mission supporting communication and object tracking in cislunar space.">
+  <meta property="og:url" content="https://kazukitojo.com/cislunar_mission/">
+  <meta name="theme-color" content="#fffefa">
+  <link rel="icon" href="/rocket_icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
 <body>
-  <main>
+  <main class="site-shell">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/">About</a>
+      <a href="/cv/">CV</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/publications/">Publications</a>
+    </nav>
 
-    <div class="tabs" style="text-align: center;">
-        <a href="https://kazukitojo.com/">About</a>
-        <a href="/cv/" class="tab-button">CV</a>
-        <a href="/projects/" class="tab-button">Projects</a>
-        <a href="/publications/" class="tab-button">Publications</a>
-    </div>
+    <header class="site-header">
+      <h1>Kazuki Tojo</h1>
+      <p class="page-kicker">Project</p>
+    </header>
 
-    <h1 style="text-align: center;">Kazuki Tojo</h1>
-
-    <p class="author"><b>Projects</b></p>
-
-    <h4>Cislunar Space Mission Design</h4>
-    <label for="sn-anything" class="sidenote-toggle">⊕</label>
-    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-    <span class="sidenote">Princeton University, Jan 2024 to May 2024. Project run by Professor Ryne Beeson. 
-        Project lead.</span>
-    <p>
-        Theoretical design of a space mission to establish communication, data relay and object tracking architectures in the cislunar 
-        domain within a $400 million budget to support NASA&apos;s Artemis program. Led a 24-person team over 12 weeks to develop a 
-        4-satellite mission satisfying the Request For Proposal. Presented the mission design to space systems experts at NASA Goddard 
+    <article class="prose">
+      <h2>Cislunar Space Mission Design</h2>
+      <details class="entry-meta">
+        <summary>Project details</summary>
+        <p>Princeton University, January–May 2024. Project led by Professor Ryne Beeson. Project lead.</p>
+      </details>
+      <p>
+        Theoretical design of a space mission to establish communication, data relay, and object-tracking architectures in the cislunar
+        domain within a $400 million budget to support NASA&apos;s Artemis program. Led a 24-person team over 12 weeks to develop a
+        four-satellite mission satisfying the request for proposal and presented the design to space systems experts at NASA Goddard
         Space Flight Center.
-    </p>
-    <br>
-    <style>#pdf1{width:100%; height:600px;}</style>
-    <iframe id="pdf1" src="ARGOS_FDR.pdf" frameborder="0" ></iframe>
+      </p>
+      <details class="document-reader">
+        <summary>Read the ARGOS final design report</summary>
+        <iframe class="document-frame" data-src="ARGOS_FDR.pdf#view=FitH" title="ARGOS cislunar mission final design report"></iframe>
+        <noscript><p class="reader-status">JavaScript is required to open the inline document reader.</p></noscript>
+      </details>
+    </article>
 
-    <br><br>
-    <footer><small>&copy 2026 Kazuki Tojo</small></footer>
+    <footer class="site-footer">&copy; 2026 Kazuki Tojo</footer>
   </main>
 </body>
-
 </html>

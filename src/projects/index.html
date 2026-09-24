@@ -1,80 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Kazuki Tojo: Projects</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://latex.now.sh/style.css">
-    <link rel="icon" href="/rocket_icon.png">
-    <style>
-      iframe {
-        width: 100%;
-        height: 400px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #efefef;
-      }
-  
-      span {
-        font-weight: 600;
-        margin-bottom: 50px;
-        display: block;
-      }
-    </style>
-  </head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Projects | Kazuki Tojo</title>
+  <meta name="description" content="Engineering projects by Kazuki Tojo in cislunar mission design, autonomous robotics, and computational aerodynamics.">
+  <link rel="canonical" href="https://kazukitojo.com/projects/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Engineering Projects | Kazuki Tojo">
+  <meta property="og:description" content="Selected work in cislunar mission design, autonomous robotics, and computational aerodynamics.">
+  <meta property="og:url" content="https://kazukitojo.com/projects/">
+  <meta name="theme-color" content="#fffefa">
+  <link rel="icon" href="/rocket_icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
 <body>
-  <main>
+  <main class="site-shell">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/">About</a>
+      <a href="/cv/">CV</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/publications/">Publications</a>
+    </nav>
 
-    <div class="tabs" style="text-align: center;">
-        <a href="https://kazukitojo.com/">About</a>
-        <a href="/cv/" class="tab-button">CV</a>
-        <a href="/projects/" class="tab-button">Projects</a>
-        <a href="/publications/" class="tab-button">Publications</a>
-    </div>
+    <header class="site-header">
+      <h1>Kazuki Tojo</h1>
+      <p class="page-kicker">Projects</p>
+    </header>
 
-    <h1 style="text-align: center;">Kazuki Tojo</h1>
+    <section aria-labelledby="projects-heading">
+      <h2 class="section-heading" id="projects-heading">Selected engineering work</h2>
+      <div class="entry-list">
+        <article class="entry">
+          <div class="entry-main">
+            <h2><a href="/cislunar_mission/">Cislunar Space Mission Design</a></h2>
+            <p>
+              Theoretical design of a space mission to establish communication, data relay, and object-tracking architectures in the
+              cislunar domain within a $400 million budget to support NASA&apos;s Artemis program. Led a 24-person team over 12 weeks
+              to develop a four-satellite mission satisfying the request for proposal and presented the design to space systems experts
+              at NASA Goddard Space Flight Center.
+            </p>
+          </div>
+          <details class="entry-meta">
+            <summary>Project details</summary>
+            <p>Princeton University, January–May 2024. Project led by Professor Ryne Beeson. Project lead.</p>
+          </details>
+        </article>
 
-    <p class="author"><b>Projects</b></p>
+        <article class="entry">
+          <div class="entry-main">
+            <h2><a href="/sarr/">Search-and-Rescue Robot Project</a></h2>
+            <p>
+              Designed, manufactured, and programmed an autonomous 10 kg search-and-rescue robot within a $750 budget to manoeuvre
+              through a winding chute, climb over a 12-inch wall, navigate toward a light source, and deposit a medical kit beside a
+              simulated trapped victim.
+            </p>
+          </div>
+          <details class="entry-meta">
+            <summary>Project details</summary>
+            <p>Princeton University, August–December 2023. Project led by Professor Dan Nosenchuck and Al Gaillard. Project lead. First team in course history to achieve full autonomous operation.</p>
+          </details>
+        </article>
 
+        <article class="entry">
+          <div class="entry-main">
+            <h2><a href="/free_flight_report/">Aerofoil Free Flight Data Generator &amp; Analyser</a></h2>
+            <p>
+              Developed a MATLAB free-flight simulator using a finite-element approach. Successive models introduced complexities such
+              as vortex shedding before the final model was validated against existing data and used to optimize aerodynamic parameters
+              from reference flight trajectories.
+            </p>
+          </div>
+          <details class="entry-meta">
+            <summary>Project details</summary>
+            <p>University of Oxford, October 2022–January 2023. Project led by Professor Luca Di Mare. First-class honours.</p>
+          </details>
+        </article>
+      </div>
+    </section>
 
-    <h4><a href="/cislunar_mission/">Cislunar Space Mission Design</a></h4>
-    <label for="sn-anything" class="sidenote-toggle">⊕</label>
-    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-    <span class="sidenote">Princeton University, Jan 2024 to May 2024. Project run by Professor Ryne Beeson. 
-        Project lead.</span>
-    <p>
-        Theoretical design of a space mission to establish communication, data relay and object tracking architectures in the cislunar 
-        domain within a $400 million budget to support NASA&apos;s Artemis program. Led a 24-person team over 12 weeks to develop a 
-        4-satellite mission satisfying the Request For Proposal. Presented the mission design to space systems experts at NASA Goddard 
-        Space Flight Center.
-    </p>
-
-    <h4><a href="/sarr/">Search-and-Rescue-Robot Project</a></h4>
-    <label for="sn-anything" class="sidenote-toggle">⊕</label>
-    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-    <span class="sidenote">Princeton University, Aug 2024 to Dec 2024. Project run by Professor Dan Nosenchuck and Al Gaillard. 
-        Project lead. First team in Princeton University course history to achieve full autonomous operation.</span>
-    <p>
-        Designed, manufactured and programmed an autonomous 10 kg SaRR under $750 to manoeuvre through a winding chute, climb over a 
-        12” wall, navigate towards a light source and deposit a medkit by a “trapped victim”.
-    </p>
-
-    <h4><a href="/free_flight_report/">Aerofoil Free Flight Data Generator & Analyser</a></h4>
-    <label for="sn-anything" class="sidenote-toggle">⊕</label>
-    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-    <span class="sidenote">University of Oxford, Oct 2022 to Jan 2023. Project run by Professor Luca Di Mare. First-class honours.</span>
-    <p>
-        A free flight simulator was coded on MATLAB through a finite-elements approach. A progression of models were tested to 
-        sequentially introduce complexities such as vortex shedding. The final model was validated against existing data, 
-        then used to generate flight trajectory data which was matched to a reference data for optimisation of aerodynamic parameters.
-    </p>
-
-    <br><br>
-    <footer><small>&copy 2026 Kazuki Tojo</small></footer>
+    <footer class="site-footer">&copy; 2026 Kazuki Tojo</footer>
   </main>
 </body>
-
 </html>

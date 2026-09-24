@@ -1,7 +1,10 @@
 {
-  "name": "vanilla-basic",
+  "name": "kazuki-tojo-portfolio",
   "version": "1.0.0",
-  "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check-site.mjs"
   }
 }
